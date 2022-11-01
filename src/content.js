@@ -44,6 +44,15 @@ colorDescArr = [
         bgColor: "gold",
 
 
+    },
+    {
+        id: 3,
+        colorName: "green",
+        desc: `green  color really isn't that difficult to get right,if you know were to start`,
+        icon: "shop",
+        bgColor: "gold",
+
+
     }
 ]
 
@@ -76,12 +85,12 @@ colorDescArr = [
 {/* <span class="material-icons">
 delete_outline
 </span> */}
-// window.addEventListener("load", () => {
+// window.addEventListener("mouseout", () => {})
 
 let mapcolorDesc = colorDescArr.map((item, index) => {
 
     return `<div class="blue1" style="background-color: ${item.bgColor};">
-    <span class="material-icons"> ${item.icon} </span>
+    <span class="material-icons "> ${item.icon} </span>
         <br />
     ${item.colorName}
     <br />
@@ -90,11 +99,11 @@ let mapcolorDesc = colorDescArr.map((item, index) => {
     </p>
     </div>`
 
-})
+}).join('')
 colorDescDiv.innerHTML = mapcolorDesc
 // })
 
-
+//---------------------------------------------------------
 
 function myFunction1() {
     // Get the value of the input field with id="numb"
@@ -163,12 +172,15 @@ highlightedItems.forEach(function (userItem) {
 
 
 const normalFont = () => {
-    const highlightedItems = userList.querySelectorAll("p");
+    const highlightedItems = userList.querySelectorAll(".userlist > p");
 
     highlightedItems.forEach(function (userItem) {
         console.log("userItem", userItem);
 
-        userItem.classList.remove("p-bold")
+        // userItem.classList.remove("p-bold")
+        if (userItem.style.fontSize == "30px") (
+            userItem.style.fontSize = "50px")
+        else (userItem.style.fontSize = "30px")
 
         // userItem.style.display = "block"
 
@@ -222,12 +234,13 @@ console.log("getRandomNumberBetweenVal", getRandomNumberBetweenVal, (Math.random
 
 
 
-setInterval(() => {
-    const randomBGDiv = document.querySelector(".randomBG");
-    randomBGDiv.style.backgroundColor = `rgb(${Math.round(Math.random() * 255)},${Math.round(Math.random() * 255)},${Math.round(Math.random() * 255)})`
+// setInterval(() => {
+//     const randomBGDiv = document.querySelector(".randomBG1");
+//     randomBGDiv.style.backgroundColor = `rgb(${Math.round(Math.random() * 255)},${Math.round(Math.random() * 255)},${Math.round(Math.random() * 255)})`
 
-    randomBGDiv.style.opacity = 0.3
-}, 500)
+//     randomBGDiv.style.opacity = 0.7
+
+// }, 500)
 
 
 

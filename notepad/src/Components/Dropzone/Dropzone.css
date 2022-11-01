@@ -1,0 +1,160 @@
+
+.content {
+    /* margin-top: 10%; */
+    
+    /* min-height: 100vh; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+  }
+  /* Actual dropzone styling start */
+  /* .container {
+    transform: translateY(-100%);
+  } */
+  
+  .container-p {
+    color: red;
+    /* text-align: center; */
+  }
+  
+  .drop-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    width: 28vw;
+    height: 25vh;
+    border: 1px dashed #000000;
+    margin-top: 2vw;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 0.5vw;
+  }
+  
+  .upload-icon {
+    width: 3vw;
+    height: 4vh;
+    /* background: url(../images/upload.png) no-repeat center center;  */
+    background-size: 100%;
+    text-align: center;
+    margin: 0 auto;
+    /* padding-top: 30px; */
+    color: #777777;
+  }
+  
+  .drop-message {
+    text-align: center;
+    font-family: Arial;
+    font-size: 2vh;
+    cursor: default;
+  }
+  .drop-message-label {
+    color: #104cbb;
+    font-family: Arial;
+    font-size: 2vh;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .file-display-container {
+    position: fixed;
+    width: 805px;
+  }
+  
+  .file-status-bar{
+    width: 100%;
+    vertical-align:top;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    line-height: 50px;
+    height: 50px;
+  }
+  
+  .file-status-bar > div {
+    overflow: hidden;
+  }
+  
+  .file-type {
+    display: inline-block!important;
+    position: absolute;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 13px;
+    margin-top: 25px;
+    padding: 0 4px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px #abc;
+    color: #fff;
+    background: #0080c8;
+    text-transform: uppercase;
+  }
+  
+  .file-name {
+    display: inline-block;
+    vertical-align:top;
+    margin-left: 50px;
+    color: #4aa1f3;
+  }
+  
+  .file-error {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 50px;
+    color: #9aa9bb;
+  }
+  
+  .file-error-message {
+    color: red;
+  }
+  
+  .file-type-logo {
+    width: 50px;
+    height: 50px;
+    /* background: url(../images/generic.png) no-repeat center center;  */
+    background-size: 100%;
+    position: absolute;
+  }
+  
+  .file-size {
+    display:inline-block;
+    vertical-align:top;
+    color:#30693D;
+    margin-left:10px;
+    margin-right:5px;
+    margin-left: 10px;
+    color: #444242;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  
+  .file-remove  {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    line-height: 15px;
+    cursor: pointer;
+    color: red;
+    margin-right: -10px;
+  }
+  .file-upload-btn {
+    color: white;
+    text-transform: uppercase;
+    outline: none;
+    background-color: #4aa1f3;
+    font-weight: bold;
+    padding: 8px 15px;
+    margin-bottom: 5px;
+  }
+  .file-input {
+    display: none;
+  } 
+  .file-field{
+    height: 5vh;
+    width: 30vw;
+    
+    cursor: default;
+    background-color:rgba(135, 190, 248, 0.323);
+    
+  }
+  /* ends */

@@ -1,20 +1,19 @@
 
-
 // let //local scope
 // var //global scope
 // const // constant 
 
 
-let a = 10
-var b = 20 //integer
+// let a = 10
+// var b = 20 //integer
 
 const PI = 3.7 //float
 
-let c = "Ganesh" //String
+// let c = "Ganesh" //String
 
-let d = "G" //Char
+// let d = "G" //Char
 
-console.log(typeof a, typeof b, typeof c, typeof d);
+// console.log(typeof a, typeof b, typeof c, typeof d);
 
 
 
@@ -178,7 +177,10 @@ console.log(person.age.birthage, person["age"]);
 
 
 const person2 = Object.assign({}, person) //created new onject
+// const person2 = _.cloneDeep({ ...person })
 person2.eyeColor = "black"
+person.eyeColor = "green"
+person.age.birthage = 9
 console.log(person, person2);
 
 
@@ -325,8 +327,8 @@ const Ufc = [
         getFullName: function () { return this.Name + this.lastName }
     }
     , {
-        Name: "colby",
-        lastName: "covington",
+        Name: "brock",
+        lastName: "lesnar",
         age: "32"
 
     }, {
@@ -375,19 +377,19 @@ console.log(UfcNamesSort);
 
 
 
-// let Arr2D = [[1, 2],
-// [3, 4, 6],
-// [5, 6],
-// [7, 8]]
+let Arr2D = [[1, 2],
+[3, 4, 6],
+[5, 6],
+[7, 8]]
 
 
-// for (let i = 0; i < Arr2D.length; i++) {
-//     for (let j = 0; j < Arr2D[i].length; j++) {
-//         console.log(Arr2D[i][j]);
+for (let i = 0; i < Arr2D.length; i++) {
+    for (let j = 0; j < Arr2D[i].length; j++) {
+        console.log(Arr2D[i][j]);
 
-//     }
+    }
 
-// }
+}
 
 
 
@@ -470,5 +472,67 @@ const logger_N = (starCount, Symbol, slideSymbol) => {
 
 // logger_N(starCount, Symbol, slideSymbol)
 
-module.exports = logger_N // old way
+// module.exports = logger_N // old way
 // export default logger_N //new es6 way
+
+
+
+// shallow clone vs deepclone
+// use lodash
+// let a = "str1"
+// let b = a
+
+// b = "st2"
+// console.log(a);
+
+// let obj = { x: 1, y: 2, objInner: { a: 4, b: 5 } }
+
+// // let obj2 = Object.assign({}, obj)
+
+// let obj2 = { ...obj }
+
+// obj2.y = 5
+// // obj2.objInner.a = 3
+
+// console.log(obj);
+
+
+
+
+
+
+// class AgeC {
+//     constructor(params) {
+
+//         this.age = 5
+//     }
+
+
+var age = 5
+
+const getAge = () => {
+
+    // self=this
+    let age = 10
+
+
+    console.log("this.agethis.agethis.agethis.agethis.agethis.age", age)
+}
+getAge()
+
+// }
+
+// let a = [5]
+// let b = [6]
+const chacheloop = (anum, bnum) => {
+    // for (let i = 0; i <= 10000000; i++) {
+
+    console.log("gaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaga")
+    // }
+    return anum + bnum;
+}
+
+chacheloop(700, 800)
+console.time("start")
+console.timeEnd("end")
+

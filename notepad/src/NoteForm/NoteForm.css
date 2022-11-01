@@ -1,0 +1,45 @@
+.formWrapper{
+    margin: auto;
+    overflow: hidden;
+}
+
+.noteButton{
+    border: none;
+    margin: 0px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 8px 2px;
+    font-size: 1em;
+    font-family: 'Droid Sans', sans-serif;
+    background-color: #1b52c9;
+    color: #fff;
+    transition: 0.2s ease-out;
+}
+
+.noteButton:hover{
+    background-color: #02BA85;
+    color: #fff;
+    transition: 0.2s ease-out;
+}
+
+.noteInput{
+    width: 100%;
+    max-width: 60vw;
+    max-height: 60vh;
+    min-height: 17vh;
+    font-size: 1.3em;
+    padding-left: 20px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    font-family: 'Droid Sans', sans-serif;
+    background-color: rgba(34,49,63,0.8);
+    color: #fff;
+    transition: 0.2s ease-out;
+    overflow: hidden;
+}
+
+.noteInput:focus{
+    background-color: #131313;
+    color: rgb(204, 204, 204);
+    transition: 0.2s ease-in;
+}

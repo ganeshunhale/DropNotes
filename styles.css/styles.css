@@ -18,6 +18,15 @@
   transform: translateY(2px);
 }
 
+@keyframes beats {
+  from {
+    font-size: 25px;
+  }
+  to {
+    font-size: 30px;
+  }
+}
+
 .heading {
   /* background-color: red; */
   color: aliceblue;
@@ -35,7 +44,7 @@
   bottom: 10px;
   flex-direction: column;
   background-color: rgb(245, 177, 177);
-  width: 50vw;
+  min-width: 200px;
   padding: 20px;
   margin: 10px;
   text-align: center;
@@ -70,7 +79,20 @@
   display: flex;
   flex-direction: row;
   background-color: rgb(255, 255, 255);
-  padding: 50px;
+  /* padding: 50px; */
+  overflow-x: scroll;
+  scrollbar-color: "transparent";
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#content::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+#content {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 @media only screen and (max-width: 600px) {
   #content {
@@ -94,14 +116,7 @@
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 600;
 }
-@keyframes beats {
-  from {
-    font-size: 25px;
-  }
-  to {
-    font-size: 30px;
-  }
-}
+
 .navbar-brand {
   width: 50px;
   height: 50px;
@@ -110,3 +125,78 @@
 .p-bold {
   font-weight: bold;
 }
+
+.ytvideostyleing {
+  display: flex;
+  flex-direction: column;
+  min-width: 340px;
+  width: 23vw;
+  height: auto;
+  /* align-items: center; */
+  margin: 10px;
+}
+#ytvid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+
+.flexdiv {
+  display: flex;
+  /* line-height: 2px; */
+  /* align-self: flex-start; */
+  flex: 1;
+  /* letter-spacing: 0.5px; */
+  margin-top: 20px;
+  justify-content: space-between;
+
+  max-width: 100%;
+
+  /* overflow: hidden; */
+  /* min-width: 0; */
+}
+.material-icons.channellogo {
+  background-color: lightgray;
+  /* align-items: flex-start; */
+  font-size: 35px;
+  padding: 5px;
+  /* padding-right: 5px; */
+  border-radius: 100%;
+  text-align: center;
+  align-self: flex-start;
+}
+.dot {
+  line-height: 5px;
+  font-size: 30px;
+}
+
+#video-menu {
+  visibility: hidden;
+  justify-self: flex-end;
+  /* background-color: lightgray; */
+}
+
+.randomBGpos {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.randomBG1 {
+}
+/* .randomBG1 {
+  position: fixed;
+  left: 50vw;
+  top: 50vh;
+ 
+
+  margin-left: 10px;
+
+  transform: translateY(-50%) translateX(-50%);
+} */
